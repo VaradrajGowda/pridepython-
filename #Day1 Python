@@ -1,0 +1,97 @@
+\\day 1 python 
+
+
+'''print("Varadraj")
+a=12
+b="Ajay"
+c=2.45
+d=True
+print(type(a))
+print(type(b))
+print(type(c))
+print(type(d)) '''
+
+# age = int(input("enter your age"))
+# print("you are ",age,"year old")
+
+
+# arithmetic opertors 
+a = 12
+b = 2
+print(a + b )
+print(a- b)
+print(a * b )
+print(a/b)
+print(a%b )
+print(a**b )
+print(a//b)
+
+print(a == b )
+print(a!=b)
+
+
+#logical opertors
+print(5>3)
+print(5<3)
+print(5>=3)
+print(5<=3) 
+
+#comparison operators 
+
+print (5>3 and 5<3) # false 
+print(5>3 and 5!=3) 
+
+print (5>3 or  5<3)
+print(5>3 or  5!=3)
+print (not(False))
+
+
+# assigment operators 
+
+#assigning the variable
+a = 5
+print(a)
+
+
+
+b = a+ 3 
+print (b)
+
+#membership operator 
+fruits  = ["mango" , "apple" , "cherry" , "Grapes"]
+print ("mango" in fruits)
+print("banana" in fruits)
+
+
+#identity operators
+
+demo1 = [1,2,3,4]
+demo2  = [1,2,3,4]
+print(demo1 is demo2) # false (new memory adress is assigned for demo1 and demo2)
+
+# in order to assign both the varaibles same memory location below code is used 
+
+demo3 = [1,23]
+demo4 = demo3 
+print(demo3 is demo4 )
+
+demo5 = demo3[:] # the variable in the demo5 are same but it is assigned in different memory location so the output is false 
+print(demo5 is demo3)
+
+
+# ternary opeartors 
+
+x = 12
+if(x % 2  == 0):
+    print("the number is even ")
+elif(x%2 != 0):
+    print("the number is odd ")
+
+
+
+
+
+
+
+
+
