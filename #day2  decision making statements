@@ -1,0 +1,75 @@
+//day 2 decision making statements\
+
+# decision making statements 
+# if ,if-else,if-elif-else,nested if 
+
+#if statement example (if the condition satisfy then only the 
+# output will be given otherwise the output will be blank )
+
+# age = int(input("enter the user age "))
+# if(age>18):
+#     print("you are major ")
+
+# if-else statment example 
+
+# age1 = int(input("enter the user age "))
+# if(age1>18):
+#     print("you are major")
+# else:
+#     print("you are minor")
+
+# if-elif-else examples 
+
+# age2 =  int(input("enter the user age"))
+# if(age2<18):
+#     print("you are child ")
+# elif(age2>60):
+#     print("you are overage ")
+# else:
+#     print("you are not child  ")
+
+# nested if examples
+
+num = int(input("enter the number"))
+if(num>5):
+    if(num%2==0):
+        print("number is even")
+    else:
+        print("the number is greater than 5 but not even")
+
+else:
+    print("the number is not greater than 5 ")
+
+
+//day2 practice set questiobn1 
+
+num = int(input("enter the number"))
+
+if(num>0):
+    print("the number is positive")
+elif(num<0):
+    print("the number is negative")
+else:
+    print("the number is zero")
+
+
+
+//day2 queston2 
+
+num1 = int(input("enter the first number"))
+num2 = int(input("enter the second number"))
+num3 = int(input("enter the third number"))
+num4 =  int(input("enter the fourth number"))
+
+if(num1 >num2 and num1 >num3 and num1>num4):
+    print("number 1 is greater among all")
+
+elif(num2 > num3 and num2 >num4):
+    print("number 2 is grater among all ")
+
+elif(num3>num4):
+    print("the number 3 is greater among all")
+
+else:
+    print("the number 4 is greater among all ")
+
