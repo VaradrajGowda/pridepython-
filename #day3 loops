@@ -1,0 +1,45 @@
+
+# simple for loop program without range 
+lst = ["Apple", "banana" , "Mango"]
+for fruits in lst :
+    print(fruits)
+
+# for loop program with range but with not parameters 
+# remember the range will start from 0 and will exclude the number mentioned in brackets eg.11
+for i in range(11): 
+    print(i)
+
+# for loop program with range and also with parameters 
+# remember the firt parameter is start and last parameter is ending point 
+# if only parameter is mentioned then it is the ending point 
+for j in range (1,10):
+    print(j)
+
+
+# while loop example 
+b  = 1
+while(b<8):
+    print("varad")
+    b +=1
+
+# control statements (continue,break)
+#1.break(terminate the entire flow of the code after the condition i satisfied)
+for num in range(1,10):
+    if(num==5):
+        break;
+    print(num)
+
+# 2.continue(terminate only the condition and the rest of the code maintain it flow)
+
+for number in range(1,6):
+    if(number==3):
+        continue;
+    print(number)
+
+#nested loop
+print("=====")
+for d in range(1,5):
+    for e  in range(1,11):
+        print(f"{d}*{e}={d*e})
+
+
