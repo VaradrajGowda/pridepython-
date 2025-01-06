@@ -1,0 +1,76 @@
+ print("hello")
+    #normal function(to write the function once and call when it is required )
+
+    #normal function 
+
+    def greet():
+        print("welcome")
+    greet();
+
+    #single parameter function 
+
+    def greet(name):
+        print(f"you name is {name}")
+    greet("varadraj")
+
+
+    #multiple parameter function 
+    def greet(name,age):
+        print(f"your name is {name} and age is {age}")
+    greet("varad",23)
+
+    # to take the number and age from user 
+    def greet(name,age):
+        print(f"{name} and {age}")
+
+    a= input("enter the user name")
+    b= int(input("enter the age "))
+
+    greet(a,b)
+
+    #default function 
+
+    def greet(name="soham"):
+        print(f"welcome {name}")
+    greet();
+    greet("maneesh")
+
+    #return function
+
+    def add(x,y):
+        return x+y
+    sum = add(4,5)
+    print(sum)
+
+    def add_sub(x,y):
+        return x+y ,x-y
+    sum,sub = add_sub(7,4)
+    print(sum,sub)
+
+    #lambda function (also know as synonmous function )
+
+    sum = lambda x,y: x+y
+
+    add = sum(5,5)
+
+    print(add)
+
+
+
+# DAY 4 PRACTICE SET FOR FUNCTIONS 
+
+# to convert the temperature from celsuis to Fahrenheit
+
+def temp(celsius):
+    print(f"today temperature in  {celsius}")
+
+
+a = int(input("enter the temperature in celsuis "))
+
+temp(a)
+
+b   = (9/5 *a) + 32
+
+print("the temperature after converting the celsuis into Fahrenheit")
+
+print(b)
