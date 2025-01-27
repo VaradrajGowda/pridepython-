@@ -1,0 +1,167 @@
+#list is a collection of items that are ordered ,mutable and can hold different types of data 
+
+#creating a list 
+# list are created using square brackets eg.[]
+numbers = [1,2,3,4,5,6,7]
+
+#creating a list with mixed data types 
+mixed_list = [1,"varad",4.7,True,[1,2,3,4]]
+
+#empty list creation 
+
+empty = []
+
+# Accessing List Elements
+# You can access items in a list by their index. Python uses zero-based indexing, meaning that indexing starts from 0.
+
+fruits = ["apple", "banana", "cherry", "date"]
+
+#accessing the element by index
+print(fruits[2])  #cherry 
+print(fruits[3])  #date
+
+#negative indices access element from the last element
+
+print(fruits[-1]) #date
+print(fruits[-2]) #cherry
+
+#slicing the list 
+ # slicing is used to retrive the subset of the list 
+
+#syntax
+#list[start:stop:step]
+# start: The index to start slicing (inclusive).
+# stop: The index to stop slicing (exclusive).
+# step: The step size (default is 1).
+
+# Examples:
+numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+#Basic Slicing 
+print(numbers[1:5]) #output[1,2,3,4]
+
+# Slice with step
+print(numbers[1:8:2])  # Output: [1, 3, 5, 7]
+
+# Slice from the start to index 4
+print(numbers[:5])  # Output: [0, 1, 2, 3, 4]
+
+# Slice from index 5 to the end
+print(numbers[5:])  # Output: [5, 6, 7, 8, 9]
+
+
+#modifying the list
+#list are mutable , which means we can change their content after creation 
+# 1. chnging the list item by index
+
+fruits = ["apple", "banana", "cherry"]
+print(fruits)
+fruits[1] = "mango" 
+print(fruits)
+
+# to add the elements in the list 
+# we can add elements in the list using methids such as append(),extend(),insert()
+
+# append():
+# Adds a single item to the end of the list.
+fruits = ["apple", "banana"]
+fruits.append("cherry")
+print(fruits)  # Output: ["apple", "banana", "cherry"]
+
+# extend():
+# Extends a list by adding multiple items from another list.
+fruits = ["apple", "banana"]
+fruits.extend(["cherry", "date"])
+print(fruits)  # Output: ["apple", "banana", "cherry", "date"]
+
+# insert():
+# Inserts an element at a specific index.
+fruits = ["apple", "banana"]
+fruits.insert(1, "blueberry")
+print(fruits)  # Output: ["apple", "blueberry", "banana"]
+
+
+# remove():
+# Removes the first occurrence of a specified value.
+# remember  remove and  works on elements and not on index
+
+fruits = ["apple", "banana", "cherry"]
+fruits.remove("banana")
+print(fruits)  # Output: ["apple", "cherry"]
+
+
+# pop():
+# Removes and returns the item at the specified index (default is the last index).
+fruits = ["apple", "banana", "cherry"]
+item = fruits.pop(1)  # Removes the item at index 1
+print(item)  # Output: "banana"
+print(fruits)  # Output: ["apple", "cherry"]
+
+# del:
+# Deletes an item at a specific index.
+fruits = ["apple", "banana", "cherry"]
+del fruits[1]
+print(fruits)  # Output: ["apple", "cherry"]
+
+
+#clear function 
+s = [1,2,3,3]
+s.clear()
+print(s)
+
+
+# copy function 
+ss =[1,2,3,45]
+pp = ss.copy()
+print(pp)
+
+# Method	Description
+# append(x)	Adds item x to the end of the list.
+# extend(iterable)	Extends the list by appending elements from an iterable.
+# insert(i, x)	Inserts item x at index i.
+# remove(x)	Removes the first occurrence of value x.
+# pop(i)	Removes and returns the item at index i.
+# index(x)	Returns the index of the first occurrence of value x.
+# count(x)	Returns the number of occurrences of value x.
+# sort()	Sorts the list in ascending order.
+# reverse()	Reverses the list.
+# clear()	Removes all items from the list.
+# copy()	Returns a shallow copy of the list.
+# Example with Methods:
+
+print("-------------------------")
+
+numbers = [5, 3, 8, 1, 9]
+numbers.sort()
+print(numbers)
+
+# Reverse the list
+numbers.reverse()
+print(numbers)  # Output: [9, 8, 5, 3, 1]
+
+# Count occurrences of a value
+numbers = [1, 2, 2, 3, 4]
+print(numbers.count(2))  # Output: 2
+
+# List Comprehensions
+# List comprehensions are a concise way to create new lists by applying expressions to elements in an iterable.
+
+# Syntax:
+
+# [expression for item in iterable if condition]
+# Example:
+
+# Create a list of squares
+squares = [x**2 for x in range(10)]
+print(squares)  # Output: [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+
+# Create a list with even numbers only
+evens = [x for x in range(10) if x % 2 == 0]
+print(evens)  # Output: [0, 2, 4, 6, 8]
+
+
+
+animals = ["cat", "dog", "bird", "fish"]
+for i in range(len(animals)):
+    print(f"Index {i} contains {animals[i]}")
+
